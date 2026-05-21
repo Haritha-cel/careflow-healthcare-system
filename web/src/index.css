@@ -1,0 +1,33 @@
+
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+/* Active underline */
+.active hr {
+  display: block;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Mobile active state */
+@media (max-width: 740px) {
+  .active p {
+    color: white;
+    /*background-color: #2563eb;  blue-600 (example) */
+    background-color: #5d0ba9;
+  }
+}
+

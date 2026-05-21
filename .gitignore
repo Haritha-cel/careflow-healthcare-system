@@ -1,0 +1,117 @@
+# ==========================================
+# 🌐 ROOT / GLOBAL IGNORES
+# ==========================================
+# OS Files
+.DS_Store
+Thumbs.db
+
+# IDE & Editors
+.vscode/
+.idea/
+*.iml
+*.iws
+*.ipr
+.settings/
+.classpath
+.project
+.factorypath
+.apt_generated
+.springBeans
+.sts4-cache
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.metro-health-check*
+
+# Typescript
+*.tsbuildinfo
+
+
+# ==========================================
+# 📱 MOBILE (Expo React Native)
+# ==========================================
+# Dependencies
+mobile/node_modules/
+
+# Expo
+mobile/.expo/
+mobile/.expo-shared/
+mobile/.expo-updates/
+mobile/web-build/
+mobile/dist/
+
+# Native Build Files & Security (CRITICAL)
+mobile/ios/
+mobile/android/
+mobile/*.jks
+mobile/*.p8
+mobile/*.p12
+mobile/*.key
+mobile/*.mobileprovision
+mobile/*.pem
+mobile/google-services.json
+mobile/GoogleService-Info.plist
+
+# Env Files
+mobile/.env
+mobile/.env.*
+!mobile/.env.example
+
+# Misc
+mobile/build/
+mobile/app-example/
+
+
+# ==========================================
+# 💬 SOCKET SERVER (mobile/api)
+# ==========================================
+mobile/api/node_modules/
+mobile/api/.env
+mobile/api/.env.*
+
+
+# ==========================================
+# 🌍 WEB (React / Vite)
+# ==========================================
+# Dependencies
+web/node_modules/
+
+# Build
+web/dist/
+web/dist-ssr/
+
+# Env Files
+web/.env
+web/.env.*
+!web/.env.example
+
+# Misc
+web/*.local
+
+
+# ==========================================
+# ⚙️ BACKEND (Spring Boot / Java)
+# ==========================================
+# Build
+backend/target/
+backend/build/
+backend/.mvn/wrapper/maven-wrapper.jar
+
+# Env Files
+backend/.env
+backend/.env.*
+
+# SECURITY NOTE: 
+# If your application.yml contains plain-text passwords/keys, IGNORE it:
+# backend/src/main/resources/application.yml
+# If it only uses environment variables (${DB_URL}), you CAN commit it safely.

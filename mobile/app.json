@@ -1,0 +1,89 @@
+{
+  "expo": {
+    "name": "careflow",
+    "slug": "careflow",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "careflow",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.medical.careflow"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/images/android-icon-foreground.png",
+        "backgroundImage": "./assets/images/android-icon-background.png",
+        "monochromeImage": "./assets/images/android-icon-monochrome.png"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false,
+      "package": "com.medical.careflow",
+      "googleServicesFile": "./google-services.json", 
+      "permissions": [
+        "RECEIVE_BOOT_COMPLETED"
+      ],
+      "intentFilters": [
+        {
+            "action": "VIEW",
+            "autoVerify": true,
+            "data": [{ "scheme": "careflow" }],
+            "category": ["BROWSABLE", "DEFAULT"]
+        }
+    ]
+    },
+    "web": {
+      "output": "static",
+      "favicon": "./assets/images/favicon.png",
+      "bundler": "metro"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/images/splash-icon.png",
+          "imageWidth": 200,
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff",
+          "dark": {
+            "backgroundColor": "#000000"
+          }
+        }
+      ],
+      "expo-secure-store",
+      "expo-web-browser",
+      "@react-native-community/datetimepicker",
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.com.careflow",
+          "enableGooglePay": true
+        }
+      ],
+      "expo-notifications",
+      [
+        "expo-build-properties",
+        {
+          "ios": {
+            "useFrameworks": "static"
+          }
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "4580c68c-133e-486a-be46-45476cb5ef2b"
+      }
+    },
+    "owner": "haritha_123"
+  }
+}

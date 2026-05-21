@@ -1,0 +1,47 @@
+spring:
+  application:
+    name: careflow
+  data:
+    mongodb:
+      uri: ${MONGODB_URI}
+      # ✅ FIX: Ensures @Indexed annotations (like TTL and Unique) are actually created on startup
+      auto-index-creation: true
+
+  servlet:
+    multipart:
+      max-file-size: 5MB
+      max-request-size: 10MB
+
+jwt:
+  auth:
+    app: careflow
+    secret_key: ${JWT_KEY}
+    expires_in: 900 # 15 minutes
+
+# ✅ false = dev (HTTP), true = production (HTTPS required for Secure cookies)
+# Override in prod via environment variable: COOKIE_SECURE=true
+cookie:
+  secure: ${COOKIE_SECURE:false}
+
+google:
+  client:
+    ids: ${GOOGLE_WEB_CLIENT_ID}
+
+admin:
+  email: ${ADMIN_EMAIL}
+  password: ${ADMIN_PASSWORD}
+
+cloudinary:
+  cloud_name: ${CLOUDINARY_NAME}
+  api_key: ${CLOUDINARY_API_KEY}
+  api_secret: ${CLOUDINARY_SECRET_KEY}
+
+stripe:
+  secret:
+    key: ${STRIPE_SECRET_KEY}
+  webhook:
+    secret: ${STRIPE_WEBHOOK_SECRET}
+
+clerk:
+  issuer: https://causal-raccoon-61.clerk.accounts.dev # Replace with your Clerk Frontend API URL (from Clerk Dashboard -> API Keys)
+  secret-key: ${CLERK_SECRET_KEY}
