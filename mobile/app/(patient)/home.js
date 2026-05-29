@@ -1,12 +1,12 @@
 import { Image, ScrollView, StyleSheet, Text, TouchableOpacity, View, useWindowDimensions } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context';
-import React, { useContext, useEffect, useMemo, useState } from 'react'
+import React, { useCallback, useContext, useMemo, useState } from 'react'
 import Header from '../../src/components/Header'
 import Categories from '../../src/components/Categories'
 import SectionHeader from '../../src/components/SectionHeader'
 import DoctorList from '../../src/components/DoctorList'
 import Button from '../../src/components/Button'
-import { useRouter } from 'expo-router'
+import { useFocusEffect, useRouter } from 'expo-router'
 import { COLORS } from '../../src/styles/Color'
 import { useQuery } from '@tanstack/react-query'
 import { fetchDoctorById } from '../../src/api/doctors'
@@ -56,9 +56,11 @@ const Home = () => {
         }
     };
 
-    useEffect(() => {
+    useFocusEffect(
+    useCallback(() => {
         if (token) fetchUserAppointments();
-    }, [token]); // ✅ Removed isDoctor dependency
+    }, [token])
+);
 
     // ================= NEAREST UPCOMING APPOINTMENT =================
     const currentAppointment = useMemo(() => {
