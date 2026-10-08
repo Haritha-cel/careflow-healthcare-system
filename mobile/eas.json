@@ -9,10 +9,21 @@
       "distribution": "internal"
     },
     "preview": {
-      "distribution": "internal"
+      "distribution": "internal",
+      "android": {
+        "buildType": "apk"  
+      },
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://careflow-healthcare-system.onrender.com",  
+        "EXPO_PUBLIC_SOCKET_URL": "https://careflow-socket.onrender.com" 
+      }
     },
     "production": {
-      "autoIncrement": true
+      "autoIncrement": true,
+      "env": {
+        "EXPO_PUBLIC_API_URL": "https://careflow-healthcare-system.onrender.com",  
+        "EXPO_PUBLIC_SOCKET_URL": "https://careflow-socket.onrender.com" 
+      }
     }
   },
   "submit": {
