@@ -54,7 +54,8 @@ public class WebSecurityConfig {
                                         "script-src 'self'; " +
                                         "style-src 'self' 'unsafe-inline'; " +
                                         "img-src 'self' data: https:; " +
-                                        "connect-src 'self'; " +
+                                        // ✅ FIX: Allow calls to Render Backend and Socket server
+                                        "connect-src 'self' https://*.onrender.com wss://*.onrender.com; " +
                                         "frame-ancestors 'none'"
                         ))
                         .frameOptions(frame -> frame.deny())
