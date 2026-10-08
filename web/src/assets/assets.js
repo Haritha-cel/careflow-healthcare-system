@@ -1,7 +1,5 @@
-import appointment_img from './appointment_img.png'
 import head_img from './head_img.png'
 import mobile_user from './mobile_user.png'
-import profile_pic from './profile_pic.png'
 import contact_image from './contact_image.jpg'
 import about_image from './about_image.jpg'
 import logo from './logo.svg'
@@ -17,14 +15,12 @@ import googlePlay from './googlePlay.png'
 import appStore from './appStore.png'
 
 export const assets = {
-    appointment_img,
     head_img,
     mobile_user,
     logo,
     chats_icon,
     verified_icon,
     info_icon,
-    profile_pic,
     arrow_icon,
     contact_image,
     about_image,

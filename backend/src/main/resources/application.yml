@@ -45,3 +45,7 @@ stripe:
 clerk:
   issuer: https://causal-raccoon-61.clerk.accounts.dev # Replace with your Clerk Frontend API URL (from Clerk Dashboard -> API Keys)
   secret-key: ${CLERK_SECRET_KEY}
+
+# ✅ ADDED: Required for Render deployment
+server:
+  port: ${PORT:8080}
