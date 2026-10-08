@@ -14,6 +14,7 @@
         "buildType": "apk"  
       },
       "env": {
+        "GOOGLE_SERVICES_JSON": "mobile/google-services.json",
         "EXPO_PUBLIC_API_URL": "https://careflow-healthcare-system.onrender.com",  
         "EXPO_PUBLIC_SOCKET_URL": "https://careflow-socket.onrender.com" 
       }
