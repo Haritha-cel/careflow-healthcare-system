@@ -15,14 +15,16 @@
       },
       "env": {
         "EXPO_PUBLIC_API_URL": "https://careflow-healthcare-system.onrender.com",  
-        "EXPO_PUBLIC_SOCKET_URL": "https://careflow-socket.onrender.com" 
+        "EXPO_PUBLIC_SOCKET_URL": "https://careflow-socket.onrender.com",
+        "GOOGLE_SERVICES_JSON": "google-services.json"  
       }
     },
     "production": {
       "autoIncrement": true,
       "env": {
         "EXPO_PUBLIC_API_URL": "https://careflow-healthcare-system.onrender.com",  
-        "EXPO_PUBLIC_SOCKET_URL": "https://careflow-socket.onrender.com" 
+        "EXPO_PUBLIC_SOCKET_URL": "https://careflow-socket.onrender.com",
+        "GOOGLE_SERVICES_JSON": "google-services.json"  
       }
     }
   },
