@@ -40,6 +40,7 @@
       "bundler": "metro"
     },
     "plugins": [
+      "./plugins/fixGradle",
       "expo-router",
       [
         "expo-splash-screen",
@@ -69,11 +70,6 @@
         {
           "ios": {
             "useFrameworks": "static"
-          },
-          "android": {
-            "packagingOptions": {
-              "excludes": ["META-INF/versions/9/OSGI-INF/MANIFEST.MF"]
-            }
           }
         }
       ]
