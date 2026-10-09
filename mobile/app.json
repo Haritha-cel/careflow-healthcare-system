@@ -32,7 +32,7 @@
             "data": [{ "scheme": "careflow" }],
             "category": ["BROWSABLE", "DEFAULT"]
         }
-    ]
+      ]
     },
     "web": {
       "output": "static",
@@ -69,6 +69,11 @@
         {
           "ios": {
             "useFrameworks": "static"
+          },
+          "android": {
+            "packagingOptions": {
+              "excludes": ["META-INF/versions/9/OSGI-INF/MANIFEST.MF"]
+            }
           }
         }
       ]
