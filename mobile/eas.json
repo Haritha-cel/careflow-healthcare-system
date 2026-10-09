@@ -11,18 +11,24 @@
     "preview": {
       "distribution": "internal",
       "android": {
-        "buildType": "apk"  
+        "buildType": "apk"
       },
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://careflow-healthcare-system.onrender.com",  
-        "EXPO_PUBLIC_SOCKET_URL": "https://careflow-socket.onrender.com"
+        "EXPO_PUBLIC_API_URL": "https://careflow-healthcare-system.onrender.com",
+        "EXPO_PUBLIC_SOCKET_URL": "https://careflow-socket.onrender.com",
+        "EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY": "pk_test_Y2F1c2FsLXJhY2Nvb24tNjEuY2xlcmsuYWNjb3VudHMuZGV2JA",
+        "EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID": "627754897924-dt27vc5ut8lqvbff0jkd5ac3q8g0o8h2.apps.googleusercontent.com",
+        "EXPO_PUBLIC_STRIPE_PUBLISHABLE_KEY": "pk_test_51TRdoMJP36GeWvpKkjpBhtcHw66aThkvN06rxMdj0x0pq2oprBiE8Vbhf6fSLbbI1MIfUNcuaXBngfLNMXJzRXYC00KdhgevPL"
       }
     },
     "production": {
       "autoIncrement": true,
       "env": {
-        "EXPO_PUBLIC_API_URL": "https://careflow-healthcare-system.onrender.com",  
-        "EXPO_PUBLIC_SOCKET_URL": "https://careflow-socket.onrender.com" 
+        "EXPO_PUBLIC_API_URL": "https://careflow-healthcare-system.onrender.com",
+        "EXPO_PUBLIC_SOCKET_URL": "https://careflow-socket.onrender.com",
+        "EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY": "pk_test_Y2F1c2FsLXJhY2Nvb24tNjEuY2xlcmsuYWNjb3VudHMuZGV2JA",
+        "EXPO_PUBLIC_GOOGLE_WEB_CLIENT_ID": "627754897924-dt27vc5ut8lqvbff0jkd5ac3q8g0o8h2.apps.googleusercontent.com",
+        "EXPO_PUBLIC_STRIPE_PUBLISHABLE_KEY": "pk_test_51TRdoMJP36GeWvpKkjpBhtcHw66aThkvN06rxMdj0x0pq2oprBiE8Vbhf6fSLbbI1MIfUNcuaXBngfLNMXJzRXYC00KdhgevPL"
       }
     }
   },
