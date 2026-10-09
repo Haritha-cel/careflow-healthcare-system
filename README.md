@@ -9,7 +9,7 @@ The platform includes a **React Native mobile application for patients and docto
 | Component             | Link                                                                                                                      |
 | --------------------- | ------------------------------------------------------------------------------------------------------------------------- |
 | Admin Web Application | [Open CareFlow Admin](https://careflow-healthcare-system.vercel.app)                                                      |
-| Android Application   | [View Android Build](https://expo.dev/accounts/haritha_123/projects/careflow/builds/3a489329-06ab-441a-9eb4-731eccaeb3d3) |
+| Android Application   | [View Android Build](https://expo.dev/accounts/haritha_123/projects/careflow/builds/ee7c1c0f-b590-424e-87dd-cf5db764286b) |
 | Backend API           | [CareFlow API (Doctor List)](https://careflow-healthcare-system.onrender.com/api/doctor/list)                                                             |
 
 **Note:** The backend is hosted on Render's free tier. The first request after a period of inactivity may take some time to respond.
