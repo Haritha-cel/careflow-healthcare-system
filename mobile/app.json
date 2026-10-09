@@ -21,8 +21,7 @@
       },
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
-      "package": "com.medical.careflow",
-      "googleServicesFile": "./google-services.json", 
+      "package": "com.medical.careflow", 
       "permissions": [
         "RECEIVE_BOOT_COMPLETED"
       ],

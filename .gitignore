@@ -59,7 +59,7 @@ mobile/*.p12
 mobile/*.key
 mobile/*.mobileprovision
 mobile/*.pem
-mobile/google-services.json
+# mobile/google-services.json
 mobile/GoogleService-Info.plist
 
 # Env Files

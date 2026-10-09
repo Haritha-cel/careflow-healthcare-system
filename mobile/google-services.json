@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "876487425484",
+    "project_id": "careflow-727e7",
+    "storage_bucket": "careflow-727e7.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:876487425484:android:ab7fd6063b14ad76bf7169",
+        "android_client_info": {
+          "package_name": "com.medical.careflow"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "876487425484-kqb4ilb4p30rh40opvgntngu26uobccl.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_gih7wt6WS9HRgf4etY7N__FDD8qTWoo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "876487425484-kqb4ilb4p30rh40opvgntngu26uobccl.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
